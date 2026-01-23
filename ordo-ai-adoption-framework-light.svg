@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1400" height="420" viewBox="0 0 1400 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ORDO AI - Enterprise AI Adoption Framework (Transparent)">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6D28D9"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+
+    <style>
+      .card { fill: #FFFFFF; stroke: rgba(0,0,0,0.10); stroke-width: 1; filter: url(#shadow); }
+      .title { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif;
+               font-size: 18px; font-weight: 800; fill: rgba(0,0,0,0.90); letter-spacing: -0.2px; }
+      .subtitle { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif;
+                  font-size: 12px; font-weight: 800; fill: rgba(0,0,0,0.48); letter-spacing: 0.7px; text-transform: uppercase; }
+      .body { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", Arial, sans-serif;
+              font-size: 13px; font-weight: 600; fill: rgba(0,0,0,0.70); }
+      .muted { fill: rgba(0,0,0,0.56); }
+      .pill { fill: rgba(0,0,0,0.03); stroke: rgba(0,0,0,0.10); stroke-width: 1; }
+      .accentStroke { stroke: url(#accent); stroke-width: 2; }
+      .arrow { stroke: rgba(0,0,0,0.28); stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Header -->
+  <text x="60" y="70" class="subtitle">ORDO AI</text>
+  <text x="60" y="100" class="title">Enterprise AI Adoption Framework</text>
+  <text x="60" y="130" class="body muted">Small Start, Structured Growth, Sustainable AI</text>
+
+  <!-- Card 1 -->
+  <rect class="card" x="60" y="170" width="290" height="190" rx="18"/>
+  <circle cx="92" cy="205" r="16" fill="url(#accent)" opacity="0.95"/>
+  <!-- icon: magnifier -->
+  <circle cx="90" cy="203" r="7" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <line x1="95" y1="208" x2="101" y2="214" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+
+  <text x="120" y="204" class="subtitle">Phase 1</text>
+  <text x="120" y="228" class="title">現況盤點（Assess）</text>
+
+  <text x="80" y="262" class="body">• 業務流程盤點</text>
+  <text x="80" y="286" class="body">• 系統架構現況</text>
+  <text x="80" y="310" class="body">• 資料成熟度評估</text>
+
+  <rect class="pill" x="80" y="328" width="250" height="26" rx="13"/>
+  <text x="92" y="346" class="body muted">Output：AI 可行性地圖</text>
+
+  <!-- Arrow 1 -->
+  <line class="arrow" x1="360" y1="265" x2="415" y2="265"/>
+  <polyline points="405,255 415,265 405,275" fill="none" class="arrow" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Card 2 -->
+  <rect class="card" x="430" y="170" width="290" height="190" rx="18"/>
+  <circle cx="462" cy="205" r="16" fill="url(#accent)" opacity="0.95"/>
+  <!-- icon: target -->
+  <circle cx="462" cy="205" r="8" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="462" cy="205" r="3" fill="#FFFFFF"/>
+
+  <text x="490" y="204" class="subtitle">Phase 2</text>
+  <text x="490" y="228" class="title">PoC 定義（Define）</text>
+
+  <text x="450" y="262" class="body">• 明確 AI 使用場景</text>
+  <text x="450" y="286" class="body">• 設定成果指標（KPI）</text>
+  <text x="450" y="310" class="body">• 控制範圍：小而可驗證</text>
+
+  <rect class="pill" x="450" y="328" width="250" height="26" rx="13"/>
+  <text x="462" y="346" class="body muted">Output：PoC Scope &amp; KPI</text>
+
+  <!-- Arrow 2 -->
+  <line class="arrow" x1="730" y1="265" x2="785" y2="265"/>
+  <polyline points="775,255 785,265 775,275" fill="none" class="arrow" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Card 3 -->
+  <rect class="card" x="800" y="170" width="290" height="190" rx="18"/>
+  <circle cx="832" cy="205" r="16" fill="url(#accent)" opacity="0.95"/>
+  <!-- icon: link -->
+  <path d="M826 205c0-3 2-5 5-5h4c3 0 5 2 5 5v0c0 3-2 5-5 5h-4c-3 0-5-2-5-5z" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M834 205c0-3 2-5 5-5h4c3 0 5 2 5 5v0c0 3-2 5-5 5h-4c-3 0-5-2-5-5z" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.95"/>
+
+  <text x="860" y="204" class="subtitle">Phase 3</text>
+  <text x="860" y="228" class="title">系統整合（Build）</text>
+
+  <text x="820" y="262" class="body">• AI × 既有系統整合</text>
+  <text x="820" y="286" class="body">• API / Workflow / RPA</text>
+  <text x="820" y="310" class="body">• 權限與資料治理</text>
+
+  <rect class="pill" x="820" y="328" width="250" height="26" rx="13"/>
+  <text x="832" y="346" class="body muted">Output：可運作的 AI 系統</text>
+
+  <!-- Arrow 3 -->
+  <line class="arrow" x1="1100" y1="265" x2="1155" y2="265"/>
+  <polyline points="1145,255 1155,265 1145,275" fill="none" class="arrow" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Card 4 -->
+  <rect class="card" x="1170" y="170" width="290" height="190" rx="18"/>
+  <circle cx="1202" cy="205" r="16" fill="url(#accent)" opacity="0.95"/>
+  <!-- icon: expand -->
+  <polyline points="1196,210 1196,202 1204,202" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="1208,200 1208,208 1200,208" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="1230" y="204" class="subtitle">Phase 4</text>
+  <text x="1230" y="228" class="title">驗證與擴展（Scale）</text>
+
+  <text x="1190" y="262" class="body">• 成效驗證與修正</text>
+  <text x="1190" y="286" class="body">• 模組化複製</text>
+  <text x="1190" y="310" class="body">• 跨部門擴展</text>
+
+  <rect class="pill" x="1190" y="328" width="250" height="26" rx="13"/>
+  <text x="1202" y="346" class="body muted">Output：可持續 AI 能力</text>
+
+  <!-- Bottom accent line -->
+  <line x1="60" y1="385" x2="1340" y2="385" class="accentStroke" opacity="0.95"/>
+</svg>
