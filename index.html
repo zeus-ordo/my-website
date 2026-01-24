@@ -3,12 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ORDO AI 是企業級 AI 作業系統（AI OS）與導入框架，結合平台能力、系統工程與顧問方法論，協助企業快速落地 AI，並可持續擴張。" />
-  <title>ORDO AI｜Enterprise AI Operating System</title>
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="ORDO AI｜Enterprise AI Operating System" />
-  <meta property="og:description" content="把 AI 真正做進流程、系統與日常營運。" />
+  <!-- SEO (will be updated by i18n) -->
+  <meta
+    id="seo_desc"
+    name="description"
+    content="ORDO AI 是企業級 AI 作業系統（AI OS）與導入框架，結合平台能力、系統工程與顧問方法論，協助企業快速落地 AI，並可持續擴張。"
+  />
+  <title id="seo_title">ORDO AI｜Enterprise AI Operating System</title>
+
+  <!-- Open Graph (will be updated by i18n) -->
+  <meta id="og_title" property="og:title" content="ORDO AI｜Enterprise AI Operating System" />
+  <meta id="og_desc" property="og:description" content="把 AI 真正做進流程、系統與日常營運。" />
   <meta property="og:type" content="website" />
 
   <style>
@@ -381,59 +387,69 @@
             <span>ORDO AI</span>
           </a>
 
-          <div class="links" role="navigation">
-            <a href="#why">Why</a>
-            <a href="#engines">Service × Product</a>
-            <a href="#deployment">Deployment</a>
-            <a href="#framework">Framework</a>
-            <a href="#architecture">Architecture</a>
-            <a href="#security">Security</a>
-          </div>
+         
+          <div class="links">
+  <a href="#why" data-i18n="nav_why">Why</a>
+  <a href="#engines" data-i18n="nav_engines">Service × Product</a>
+  <a href="#deployment" data-i18n="nav_deployment">Deployment</a>
+  <a href="#framework" data-i18n="nav_framework">Framework</a>
+  <a href="#architecture" data-i18n="nav_architecture">Architecture</a>
+  <a href="#security" data-i18n="nav_security">Security</a>
+</div>
 
-          <div class="cta">
-            <a class="btn" href="#whitepaper">Whitepaper</a>
-            <a class="btn btn-primary" href="#contact">15 分鐘導入評估</a>
-          </div>
+         <div class="cta">
+  <div class="lang" role="group" aria-label="Language switch">
+    <button class="btn" type="button" data-lang="zh">中文</button>
+    <button class="btn" type="button" data-lang="en">EN</button>
+    <button class="btn" type="button" data-lang="ja">日本語</button>
+  </div>
+
+  <a class="btn" href="#whitepaper" data-i18n="nav_whitepaper">Whitepaper</a>
+  <a class="btn btn-primary" href="#contact" data-i18n="nav_assessment">15 分鐘導入評估</a>
+</div>
+
         </nav>
       </div>
     </header>
 
     <main id="top">
+      
       <!-- HERO -->
-      <section class="hero">
-        <div class="container">
-          <div class="kicker">Enterprise AI Operating System</div>
-          <h1 class="h1">Build AI into operations.</h1>
-          <p class="lead">
-            ORDO AI 讓 AI 不只是回答，而是能理解流程、協助執行、可治理、可擴張。
-            我們以「快速開發 × 快速導入」交付成果，並提供雲端、地端與雲加地混合部署，滿足不同資安與現場限制。
+<section class="hero">
+  <div class="container">
+    <div class="kicker" data-i18n="hero_kicker">Enterprise AI Operating System</div>
+    <h1 class="h1" data-i18n="hero_title">Build AI into operations.</h1>
+
+    <p class="lead" data-i18n="hero_lead">
+      ORDO AI 讓 AI 不只是回答，而是能理解流程、協助執行、可治理、可擴張。
+      我們以「快速開發 × 快速導入」交付成果，並提供雲端、地端與雲加地混合部署，滿足不同資安與現場限制。
+    </p>
+
+    <div class="pill-row" aria-label="Trust highlights">
+      <span class="pill" data-i18n="pill_fast">快速開發 / 快速導入</span>
+      <span class="pill" data-i18n="pill_deploy">Cloud / On-Prem / Appliance / Hybrid</span>
+      <span class="pill" data-i18n="pill_iam">權限控管</span>
+      <span class="pill" data-i18n="pill_audit">Log / Audit</span>
+      <span class="pill" data-i18n="pill_integration">企業級整合</span>
+    </div>
+
+    <div class="grid-2">
+      <div>
+        <div class="cta" style="margin-top:18px;">
+          <a class="btn btn-primary" href="#contact" data-i18n="hero_cta_primary">立即預約 15 分鐘導入評估</a>
+          <a class="btn" href="#whitepaper" data-i18n="hero_cta_secondary">下載一頁式 Whitepaper</a>
+        </div>
+
+        <div class="card card-flat" style="margin-top:18px;">
+          <div class="card-title" data-i18n="hero_one_liner_title">一句話定位</div>
+          <p class="card-body" data-i18n="hero_one_liner_body">
+            ORDO AI 是「企業 AI 作業系統」與「導入框架」：用可複製的方法把 AI 做進流程與系統，
+            並確保可治理、可維運、可擴張。
           </p>
+        </div>
+      </div>
 
-          <div class="pill-row" aria-label="Trust highlights">
-            <span class="pill">快速開發 / 快速導入</span>
-            <span class="pill">Cloud / On-Prem / Appliance / Hybrid</span>
-            <span class="pill">權限控管</span>
-            <span class="pill">Log / Audit</span>
-            <span class="pill">企業級整合</span>
-          </div>
-
-          <div class="grid-2">
-            <div>
-              <div class="cta" style="margin-top:18px;">
-                <a class="btn btn-primary" href="#contact">立即預約 15 分鐘導入評估</a>
-                <a class="btn" href="#whitepaper">下載一頁式 Whitepaper</a>
-              </div>
-
-              <div class="card card-flat" style="margin-top:18px;">
-                <div class="card-title">一句話定位</div>
-                <p class="card-body">
-                  ORDO AI 是「企業 AI 作業系統」與「導入框架」：用可複製的方法把 AI 做進流程與系統，
-                  並確保可治理、可維運、可擴張。
-                </p>
-              </div>
-            </div>
-
-            <aside class="visual" aria-label="Visual preview">
+      <aside class="visual" aria-label="Visual preview">
               <div class="kicker" style="position:relative;">Preview</div>
               <div class="mock" role="img" aria-label="Minimal dashboard mock">
                 <div class="mock-top">
@@ -449,396 +465,412 @@
                 </div>
               </div>
             </aside>
-          </div>
-        </div>
-      </section>
+    </div>
+  </div>
+</section>
+
 
       <!-- WHY -->
-      <section id="why" class="section">
-        <div class="container">
-          <div class="kicker">Why</div>
-          <h2 class="title">AI 導入卡關，通常不是模型問題</h2>
-          <p class="desc">
-            多數組織缺的不是更多 AI 工具，而是一套可落地、可治理、可擴張的導入方式與系統架構。
-          </p>
+<section id="why" class="section">
+  <div class="container">
+    <div class="kicker" data-i18n="why_kicker">Why</div>
+    <h2 class="title" data-i18n="why_title">AI 導入卡關，通常不是模型問題</h2>
+    <p class="desc" data-i18n="why_desc">
+      多數組織缺的不是更多 AI 工具，而是一套可落地、可治理、可擴張的導入方式與系統架構。
+    </p>
 
-          <div class="grid-3">
-            <div class="card">
-              <div class="card-title">工具分散</div>
-              <p class="card-body">AI 很多但彼此不通，難以成為可運作的系統。</p>
-            </div>
-            <div class="card">
-              <div class="card-title">流程斷裂</div>
-              <p class="card-body">會回答不等於會做：缺少流程與回寫能力。</p>
-            </div>
-            <div class="card">
-              <div class="card-title">PoC 停滯</div>
-              <p class="card-body">做得出來但擴不出去：缺乏模組化與治理設計。</p>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title" data-i18n="why_c1_title">工具分散</div>
+        <p class="card-body" data-i18n="why_c1_body">AI 很多但彼此不通，難以成為可運作的系統。</p>
+      </div>
+      <div class="card">
+        <div class="card-title" data-i18n="why_c2_title">流程斷裂</div>
+        <p class="card-body" data-i18n="why_c2_body">會回答不等於會做：缺少流程與回寫能力。</p>
+      </div>
+      <div class="card">
+        <div class="card-title" data-i18n="why_c3_title">PoC 停滯</div>
+        <p class="card-body" data-i18n="why_c3_body">做得出來但擴不出去：缺乏模組化與治理設計。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENGINES (Service × Product) -->
+<section id="engines" class="section" style="background: var(--bg2);">
+  <div class="container">
+    <div class="kicker" data-i18n="eng_kicker">Service × Product</div>
+    <h2 class="title" data-i18n="eng_title">服務端 × 產品端，一套完整交付</h2>
+    <p class="desc" data-i18n="eng_desc">
+      服務端提供快速開發與導入節奏；產品端提供雲端、地端（整體方案 / 一機式）與雲加地混合部署，
+      讓您從 PoC 到規模化一路可走。
+    </p>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title" data-i18n="eng_s_title">Service Engine｜快速開發 + 快速導入</div>
+        <p class="card-body" data-i18n="eng_s_body">
+          以 AI 加速需求釐清、架構設計與開發交付；並用導入框架推進 Assess → Define → Build → Scale，
+          每一步都有交付件，避免停在 PoC。
+        </p>
+        <ul class="bullets">
+          <li data-i18n="eng_s_b1"><b>快速開發</b>：規格 → 架構 → 開發 → 部署（短週期迭代）</li>
+          <li data-i18n="eng_s_b2"><b>快速導入</b>：每階段可驗證成果與 KPI</li>
+          <li data-i18n="eng_s_b3"><b>可擴張</b>：把成功模組化複製到跨部門流程</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title" data-i18n="eng_p_title">Product Engine｜全部署型態（雲 / 地 / 混合）</div>
+        <p class="card-body" data-i18n="eng_p_body">
+          依資安與現場限制選擇最適部署方式：雲端快速擴展、地端整體方案、一機式快速複製，以及雲加地兼顧安全與效率。
+        </p>
+        <ul class="bullets">
+          <li data-i18n="eng_p_b1"><b>Cloud</b>：最快啟用與擴展</li>
+          <li data-i18n="eng_p_b2"><b>On-Prem Suite</b>：地端整體方案（權限 / 稽核 / 內網整合）</li>
+          <li data-i18n="eng_p_b3"><b>Appliance</b>：一機式方案（分點/門市/工廠快速落地）</li>
+          <li data-i18n="eng_p_b4"><b>Hybrid</b>：雲加地（敏感資料不出網 + 彈性算力）</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPLOYMENT -->
+<section id="deployment" class="section">
+  <div class="container">
+    <div class="kicker" data-i18n="dep_kicker">Deployment</div>
+    <h2 class="title" data-i18n="dep_title">雲端 / 地端整體方案 / 一機式 / 雲加地</h2>
+    <p class="desc" data-i18n="dep_desc">
+      你不用為了導入 AI 改變你的資安策略。ORDO AI 提供完整部署選項，讓 AI 能在你允許的邊界內運作。
+    </p>
+
+    <div class="grid-4">
+      <div class="deploy-card">
+        <div>
+          <div class="deploy-head">
+            <div class="deploy-badge" aria-hidden="true"></div>
+            <div>
+              <div class="deploy-title" data-i18n="dep_c_title">Cloud（雲端）</div>
+              <div class="deploy-sub" data-i18n="dep_c_sub">最快上線、最快擴展</div>
             </div>
           </div>
+          <ul class="deploy-list">
+            <li data-i18n="dep_c_l1">快速啟用、跨部門擴張</li>
+            <li data-i18n="dep_c_l2">集中更新與版本管理</li>
+            <li data-i18n="dep_c_l3">整合企業 SaaS / API</li>
+          </ul>
         </div>
-      </section>
+      </div>
 
-      <!-- ENGINES (Service × Product) -->
-      <section id="engines" class="section" style="background: var(--bg2);">
-        <div class="container">
-          <div class="kicker">Service × Product</div>
-          <h2 class="title">服務端 × 產品端，一套完整交付</h2>
-          <p class="desc">
-            服務端提供快速開發與導入節奏；產品端提供雲端、地端（整體方案 / 一機式）與雲加地混合部署，
-            讓您從 PoC 到規模化一路可走。
-          </p>
-
-          <div class="grid-2">
-            <div class="card">
-              <div class="card-title">Service Engine｜快速開發 + 快速導入</div>
-              <p class="card-body">
-                以 AI 加速需求釐清、架構設計與開發交付；並用導入框架推進 Assess → Define → Build → Scale，
-                每一步都有交付件，避免停在 PoC。
-              </p>
-              <ul class="bullets">
-                <li><b>快速開發</b>：規格 → 架構 → 開發 → 部署（短週期迭代）</li>
-                <li><b>快速導入</b>：每階段可驗證成果與 KPI</li>
-                <li><b>可擴張</b>：把成功模組化複製到跨部門流程</li>
-              </ul>
-            </div>
-
-            <div class="card">
-              <div class="card-title">Product Engine｜全部署型態（雲 / 地 / 混合）</div>
-              <p class="card-body">
-                依資安與現場限制選擇最適部署方式：雲端快速擴展、地端整體方案、一機式快速複製，以及雲加地兼顧安全與效率。
-              </p>
-              <ul class="bullets">
-                <li><b>Cloud</b>：最快啟用與擴展</li>
-                <li><b>On-Prem Suite</b>：地端整體方案（權限 / 稽核 / 內網整合）</li>
-                <li><b>Appliance</b>：一機式方案（分點/門市/工廠快速落地）</li>
-                <li><b>Hybrid</b>：雲加地（敏感資料不出網 + 彈性算力）</li>
-              </ul>
+      <div class="deploy-card">
+        <div>
+          <div class="deploy-head">
+            <div class="deploy-badge" aria-hidden="true"></div>
+            <div>
+              <div class="deploy-title" data-i18n="dep_o_title">On-Prem Suite（地端整體方案）</div>
+              <div class="deploy-sub" data-i18n="dep_o_sub">高資安 / 內網 / 合規場景</div>
             </div>
           </div>
+          <ul class="deploy-list">
+            <li data-i18n="dep_o_l1">權限、稽核、資料治理</li>
+            <li data-i18n="dep_o_l2">內網系統整合與網段設計</li>
+            <li data-i18n="dep_o_l3">符合政府/金融/製造需求</li>
+          </ul>
         </div>
-      </section>
+      </div>
 
-      <!-- DEPLOYMENT -->
-      <section id="deployment" class="section">
-        <div class="container">
-          <div class="kicker">Deployment</div>
-          <h2 class="title">雲端 / 地端整體方案 / 一機式 / 雲加地</h2>
-          <p class="desc">
-            你不用為了導入 AI 改變你的資安策略。ORDO AI 提供完整部署選項，讓 AI 能在你允許的邊界內運作。
-          </p>
-
-          <div class="grid-4">
-            <div class="deploy-card">
-              <div>
-                <div class="deploy-head">
-                  <div class="deploy-badge" aria-hidden="true"></div>
-                  <div>
-                    <div class="deploy-title">Cloud（雲端）</div>
-                    <div class="deploy-sub">最快上線、最快擴展</div>
-                  </div>
-                </div>
-                <ul class="deploy-list">
-                  <li>快速啟用、跨部門擴張</li>
-                  <li>集中更新與版本管理</li>
-                  <li>整合企業 SaaS / API</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="deploy-card">
-              <div>
-                <div class="deploy-head">
-                  <div class="deploy-badge" aria-hidden="true"></div>
-                  <div>
-                    <div class="deploy-title">On-Prem Suite（地端整體方案）</div>
-                    <div class="deploy-sub">高資安 / 內網 / 合規場景</div>
-                  </div>
-                </div>
-                <ul class="deploy-list">
-                  <li>權限、稽核、資料治理</li>
-                  <li>內網系統整合與網段設計</li>
-                  <li>符合政府/金融/製造需求</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="deploy-card">
-              <div>
-                <div class="deploy-head">
-                  <div class="deploy-badge" aria-hidden="true"></div>
-                  <div>
-                    <div class="deploy-title">Appliance（一機式方案）</div>
-                    <div class="deploy-sub">快速落地、標準化複製</div>
-                  </div>
-                </div>
-                <ul class="deploy-list">
-                  <li>一台機器即部署</li>
-                  <li>分點/門市/工廠現場</li>
-                  <li>可控成本、快速擴點</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="deploy-card">
-              <div>
-                <div class="deploy-head">
-                  <div class="deploy-badge" aria-hidden="true"></div>
-                  <div>
-                    <div class="deploy-title">Hybrid（雲加地）</div>
-                    <div class="deploy-sub">安全與效率兼顧</div>
-                  </div>
-                </div>
-                <ul class="deploy-list">
-                  <li>敏感資料留地端</li>
-                  <li>雲端彈性算力與更新</li>
-                  <li>導入更平滑、可持續</li>
-                </ul>
-              </div>
+      <div class="deploy-card">
+        <div>
+          <div class="deploy-head">
+            <div class="deploy-badge" aria-hidden="true"></div>
+            <div>
+              <div class="deploy-title" data-i18n="dep_a_title">Appliance（一機式方案）</div>
+              <div class="deploy-sub" data-i18n="dep_a_sub">快速落地、標準化複製</div>
             </div>
           </div>
-
-          <div class="card card-flat" style="margin-top:16px;">
-            <div class="card-title">建議策略（最常見）</div>
-            <p class="card-body">
-              先用 <b>一機式 / 地端</b> 快速在現場跑出可驗證成果，再視資安與擴張需求導入 <b>Hybrid</b>，
-              讓資料留在該留的地方，同時保有雲端擴展能力。
-            </p>
-          </div>
+          <ul class="deploy-list">
+            <li data-i18n="dep_a_l1">一台機器即部署</li>
+            <li data-i18n="dep_a_l2">分點/門市/工廠現場</li>
+            <li data-i18n="dep_a_l3">可控成本、快速擴點</li>
+          </ul>
         </div>
-      </section>
+      </div>
+
+      <div class="deploy-card">
+        <div>
+          <div class="deploy-head">
+            <div class="deploy-badge" aria-hidden="true"></div>
+            <div>
+              <div class="deploy-title" data-i18n="dep_h_title">Hybrid（雲加地）</div>
+              <div class="deploy-sub" data-i18n="dep_h_sub">安全與效率兼顧</div>
+            </div>
+          </div>
+          <ul class="deploy-list">
+            <li data-i18n="dep_h_l1">敏感資料留地端</li>
+            <li data-i18n="dep_h_l2">雲端彈性算力與更新</li>
+            <li data-i18n="dep_h_l3">導入更平滑、可持續</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-flat" style="margin-top:16px;">
+      <div class="card-title" data-i18n="dep_tip_title">建議策略（最常見）</div>
+      <p class="card-body" data-i18n="dep_tip_body">
+        先用 <b>一機式 / 地端</b> 快速在現場跑出可驗證成果，再視資安與擴張需求導入 <b>Hybrid</b>，
+        讓資料留在該留的地方，同時保有雲端擴展能力。
+      </p>
+    </div>
+  </div>
+</section>
+
 
       <!-- FRAMEWORK -->
-      <section id="framework" class="section" style="background: var(--bg2);">
-        <div class="container">
-          <div class="kicker">Framework</div>
-          <h2 class="title">快速導入不是口號，是交付節奏</h2>
-          <p class="desc">
-            ORDO AI 以四階段導入框架推進，每一步都定義清楚「要交付什麼」，確保可驗證、可複製、可治理。
+<section id="framework" class="section" style="background: var(--bg2);">
+  <div class="container">
+    <div class="kicker" data-i18n="fw_kicker">Framework</div>
+    <h2 class="title" data-i18n="fw_title">快速導入不是口號，是交付節奏</h2>
+    <p class="desc" data-i18n="fw_desc">
+      ORDO AI 以四階段導入框架推進，每一步都定義清楚「要交付什麼」，確保可驗證、可複製、可治理。
+    </p>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="card-title" data-i18n="fw_box_title">Assess → Define → Build → Scale</div>
+        <ul class="bullets">
+          <li data-i18n="fw_b1"><b>現況盤點（Assess）</b>：流程 / 系統 / 資料成熟度 → <b>AI 可行性地圖</b></li>
+          <li data-i18n="fw_b2"><b>PoC 定義（Define）</b>：場景與 KPI → <b>PoC Scope & KPI</b></li>
+          <li data-i18n="fw_b3"><b>系統整合（Build）</b>：API / Workflow / RPA + 治理 → <b>可運作的 AI 系統（含回寫）</b></li>
+          <li data-i18n="fw_b4"><b>驗證擴展（Scale）</b>：成效驗證、模組化複製 → <b>擴展方案與治理節點</b></li>
+        </ul>
+
+        <div class="card-flat" style="margin-top:14px; padding:14px; border-radius:18px; border:1px solid rgba(0,0,0,0.10);">
+          <div class="card-title" style="margin-bottom:6px;" data-i18n="fw_out_title">你會得到什麼？</div>
+          <p class="card-body" data-i18n="fw_out_body">
+            一個「可跑的系統」+ 一套「可擴張的方法」。不只做出 PoC，而是把成功變成能力。
           </p>
+        </div>
+      </div>
 
-          <div class="grid-2">
-            <div class="card">
-              <div class="card-title">Assess → Define → Build → Scale</div>
-              <ul class="bullets">
-                <li><b>現況盤點（Assess）</b>：流程 / 系統 / 資料成熟度 → <b>AI 可行性地圖</b></li>
-                <li><b>PoC 定義（Define）</b>：場景與 KPI → <b>PoC Scope & KPI</b></li>
-                <li><b>系統整合（Build）</b>：API / Workflow / RPA + 治理 → <b>可運作的 AI 系統（含回寫）</b></li>
-                <li><b>驗證擴展（Scale）</b>：成效驗證、模組化複製 → <b>擴展方案與治理節點</b></li>
-              </ul>
-
-              <div class="card-flat" style="margin-top:14px; padding:14px; border-radius:18px; border:1px solid rgba(0,0,0,0.10);">
-                <div class="card-title" style="margin-bottom:6px;">你會得到什麼？</div>
-                <p class="card-body">
-                  一個「可跑的系統」+ 一套「可擴張的方法」。不只做出 PoC，而是把成功變成能力。
-                </p>
-              </div>
-            </div>
-
-            <div class="svg-frame" aria-label="AI adoption framework diagram">
-             <img
-  src="/ordo-ai-adoption-framework-light.svg"
+      <div class="svg-frame" aria-label="AI adoption framework diagram">
+        <img
+  src="./ordo-ai-adoption-framework-light.svg"
   alt="ORDO AI - Enterprise AI Adoption Framework diagram"
   style="width:100%; height:auto;"
 />
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- USE CASES -->
-      <section id="usecases" class="section">
-        <div class="container">
-          <div class="kicker">Use Cases</div>
-          <h2 class="title">把 AI 變成可執行的流程能力</h2>
-          <p class="desc">下面是最常見且最容易形成擴張效益的場景組合。</p>
+        <p class="form-note" style="margin-top:10px;" data-i18n="fw_img_note">
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
-          <div class="grid-3">
-            <div class="card">
-              <div class="card-title">自動回覆 / 內部詢問</div>
-              <p class="card-body">帶權限與資料來源治理的問答與查詢，避免「答錯、答超出權限」。</p>
-            </div>
-            <div class="card">
-              <div class="card-title">訂位 / 工單 / 表單流程</div>
-              <p class="card-body">查詢 → 判斷 → 回寫；把 AI 做成流程節點，而不是聊天機器人。</p>
-            </div>
-            <div class="card">
-              <div class="card-title">報價 / 報表 / 文件生成</div>
-              <p class="card-body">可追溯的文件產出（摘要、比對、生成），並可接入審核流程。</p>
-            </div>
-          </div>
+<!-- USE CASES -->
+<section id="usecases" class="section">
+  <div class="container">
+    <div class="kicker" data-i18n="uc_kicker">Use Cases</div>
+    <h2 class="title" data-i18n="uc_title">把 AI 變成可執行的流程能力</h2>
+    <p class="desc" data-i18n="uc_desc">下面是最常見且最容易形成擴張效益的場景組合。</p>
 
-          <div class="grid-3" style="margin-top:16px;">
-            <div class="card">
-              <div class="card-title">圖片辨識 + 資料庫查詢</div>
-              <p class="card-body">辨識 → 比對 → 回應；可應用於商品、設備、現場檢核等。</p>
-            </div>
-            <div class="card">
-              <div class="card-title">AI 協助開發與部署</div>
-              <p class="card-body">規格 → 程式 → 部署，縮短交付週期並降低溝通成本。</p>
-            </div>
-            <div class="card">
-              <div class="card-title">跨系統整合（API / RPA）</div>
-              <p class="card-body">把企業既有系統串成可運作流程，讓 AI 成為協作層。</p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title" data-i18n="uc_c1_t">自動回覆 / 內部詢問</div>
+        <p class="card-body" data-i18n="uc_c1_b">帶權限與資料來源治理的問答與查詢，避免「答錯、答超出權限」。</p>
+      </div>
+      <div class="card">
+        <div class="card-title" data-i18n="uc_c2_t">訂位 / 工單 / 表單流程</div>
+        <p class="card-body" data-i18n="uc_c2_b">查詢 → 判斷 → 回寫；把 AI 做成流程節點，而不是聊天機器人。</p>
+      </div>
+      <div class="card">
+        <div class="card-title" data-i18n="uc_c3_t">報價 / 報表 / 文件生成</div>
+        <p class="card-body" data-i18n="uc_c3_b">可追溯的文件產出（摘要、比對、生成），並可接入審核流程。</p>
+      </div>
+    </div>
 
-      <!-- ARCHITECTURE -->
-      <section id="architecture" class="section" style="background: var(--bg2);">
-        <div class="container">
-          <div class="kicker">Architecture</div>
-          <h2 class="title">企業 AI 架構，應該像系統而不是工具</h2>
-          <p class="desc">以流程為核心，串接資料與系統，並以權限、稽核確保可控與可追溯。</p>
+    <div class="grid-3" style="margin-top:16px;">
+      <div class="card">
+        <div class="card-title" data-i18n="uc_c4_t">圖片辨識 + 資料庫查詢</div>
+        <p class="card-body" data-i18n="uc_c4_b">辨識 → 比對 → 回應；可應用於商品、設備、現場檢核等。</p>
+      </div>
+      <div class="card">
+        <div class="card-title" data-i18n="uc_c5_t">AI 協助開發與部署</div>
+        <p class="card-body" data-i18n="uc_c5_b">規格 → 程式 → 部署，縮短交付週期並降低溝通成本。</p>
+      </div>
+      <div class="card">
+        <div class="card-title" data-i18n="uc_c6_t">跨系統整合（API / RPA）</div>
+        <p class="card-body" data-i18n="uc_c6_b">把企業既有系統串成可運作流程，讓 AI 成為協作層。</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-          <div class="grid-3">
-            <div class="card">
-              <div class="card-title">介面層</div>
-              <p class="card-body">Web / H5 / API（Chat / Workflow UI）</p>
-            </div>
-            <div class="card">
-              <div class="card-title">AI 協作層</div>
-              <p class="card-body">Workflow Engine / Agents / LLM Router</p>
-            </div>
-            <div class="card">
-              <div class="card-title">資料與知識層</div>
-              <p class="card-body">文件、DB、Vector DB（RAG）、版本與權限</p>
-            </div>
-          </div>
+<!-- ARCHITECTURE -->
+<section id="architecture" class="section" style="background: var(--bg2);">
+  <div class="container">
+    <div class="kicker" data-i18n="ar_kicker">Architecture</div>
+    <h2 class="title" data-i18n="ar_title">企業 AI 架構，應該像系統而不是工具</h2>
+    <p class="desc" data-i18n="ar_desc">以流程為核心，串接資料與系統，並以權限、稽核確保可控與可追溯。</p>
 
-          <div class="card card-flat" style="margin-top:16px;">
-            <div class="card-title">整合層</div>
-            <p class="card-body">API / Webhook / RPA / 外部系統回寫（可依需求整合 ERP、CRM、表單、工單、訂位等）</p>
-          </div>
-        </div>
-      </section>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-title" data-i18n="ar_c1_t">介面層</div>
+        <p class="card-body" data-i18n="ar_c1_b">Web / H5 / API（Chat / Workflow UI）</p>
+      </div>
+      <div class="card">
+        <div class="card-title" data-i18n="ar_c2_t">AI 協作層</div>
+        <p class="card-body" data-i18n="ar_c2_b">Workflow Engine / Agents / LLM Router</p>
+      </div>
+      <div class="card">
+        <div class="card-title" data-i18n="ar_c3_t">資料與知識層</div>
+        <p class="card-body" data-i18n="ar_c3_b">文件、DB、Vector DB（RAG）、版本與權限</p>
+      </div>
+    </div>
+
+    <div class="card card-flat" style="margin-top:16px;">
+      <div class="card-title" data-i18n="ar_int_t">整合層</div>
+      <p class="card-body" data-i18n="ar_int_b">API / Webhook / RPA / 外部系統回寫（可依需求整合 ERP、CRM、表單、工單、訂位等）</p>
+    </div>
+  </div>
+</section>
+
+
 
       <!-- SECURITY -->
-      <section id="security" class="section">
-        <div class="container">
-          <div class="kicker">Security</div>
-          <h2 class="title">治理為設計基礎：可控、可追溯、可合規</h2>
-          <p class="desc">
-            不是導入後才補資安，而是從一開始就把權限、稽核與資料治理納入設計，支援企業與政府場景。
-          </p>
+<section id="security" class="section">
+  <div class="container">
+    <div class="kicker" data-i18n="sec_kicker">Security</div>
+    <h2 class="title" data-i18n="sec_title">治理為設計基礎：可控、可追溯、可合規</h2>
+    <p class="desc" data-i18n="sec_desc">
+      不是導入後才補資安，而是從一開始就把權限、稽核與資料治理納入設計，支援企業與政府場景。
+    </p>
 
-          <div class="split">
-            <div class="card">
-              <div class="card-title">權限與邊界</div>
-              <ul class="bullets">
-                <li>使用者 / 部門 / 角色分級</li>
-                <li>資料來源控管與可追溯性</li>
-                <li>敏感資料可採不出網策略</li>
-              </ul>
-            </div>
-            <div class="card">
-              <div class="card-title">稽核與可回放</div>
-              <ul class="bullets">
-                <li>Log / Audit / Traceability</li>
-                <li>流程執行紀錄可回放（依專案設計）</li>
-                <li>模型策略可切換（雲端 / 私有）</li>
-              </ul>
-            </div>
+    <div class="split">
+      <div class="card">
+        <div class="card-title" data-i18n="sec_c1_t">權限與邊界</div>
+        <ul class="bullets">
+          <li data-i18n="sec_c1_b1">使用者 / 部門 / 角色分級</li>
+          <li data-i18n="sec_c1_b2">資料來源控管與可追溯性</li>
+          <li data-i18n="sec_c1_b3">敏感資料可採不出網策略</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title" data-i18n="sec_c2_t">稽核與可回放</div>
+        <ul class="bullets">
+          <li data-i18n="sec_c2_b1">Log / Audit / Traceability</li>
+          <li data-i18n="sec_c2_b2">流程執行紀錄可回放（依專案設計）</li>
+          <li data-i18n="sec_c2_b3">模型策略可切換（雲端 / 私有）</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHITEPAPER -->
+<section id="whitepaper" class="section" style="background: var(--bg2);">
+  <div class="container">
+    <div class="kicker" data-i18n="wp_kicker">Download</div>
+    <h2 class="title" data-i18n="wp_title">一頁式 Whitepaper</h2>
+    <p class="desc" data-i18n="wp_desc">1 頁快速理解 ORDO AI 的定位、導入框架、部署模式與價值。</p>
+
+    <div class="card">
+      <div class="card-title" data-i18n="wp_card_title">下載</div>
+      <p class="card-body" data-i18n="wp_card_body">
+        下載後可用於內部分享與提案溝通。若需客製版本（含產業案例與流程），可先預約導入評估。
+      </p>
+      <div class="cta" style="margin-top:14px;">
+        <a class="btn btn-primary" href="whitepaper.pdf" download data-i18n="wp_btn_pdf">下載 PDF</a>
+        <a class="btn" href="#contact" data-i18n="wp_btn_assess">我想先做導入評估</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="kicker" data-i18n="ct_kicker">Get Started</div>
+    <h2 class="title" data-i18n="ct_title">預約 15 分鐘導入評估</h2>
+    <p class="desc" data-i18n="ct_desc">
+      我們會快速確認：你最值得先做的 AI 場景、預期 KPI、資料與系統整合路徑，以及適合的部署型態（雲 / 地 / 混合）。
+    </p>
+
+    <div class="cta-band" style="margin-top:18px;">
+      <div>
+        <h2 data-i18n="ct_band_title">讓你的 AI 先跑起來，再擴張成能力</h2>
+        <p data-i18n="ct_band_desc">
+          先用小而可驗證的場景跑出成果，再用模組化方式擴展到跨部門流程與多據點（含一機式快速複製）。
+        </p>
+        <div class="pill-row" style="margin-top:14px;">
+          <span class="pill" data-i18n="ct_p1">快速落地</span>
+          <span class="pill" data-i18n="ct_p2">可治理</span>
+          <span class="pill" data-i18n="ct_p3">可擴張</span>
+          <span class="pill" data-i18n="ct_p4">雲 / 地 / 混合</span>
+        </div>
+      </div>
+
+      <!-- Lead Form -->
+      <form
+        class="form"
+        id="leadForm"
+        action="https://docs.google.com/forms/d/e/11AT9mn2vqjJUNPNISfycT_jYykHDDNOsnhzI0yy6z0A/formResponse"
+        method="POST"
+        target="hidden_iframe"
+      >
+        <div class="form-row">
+          <div class="field">
+            <label for="name" data-i18n="form_name_label">姓名</label>
+            <input id="name" name="name" placeholder="Zeus Su" data-i18n-placeholder="form_name_ph" required />
+          </div>
+          <div class="field">
+            <label for="company" data-i18n="form_company_label">公司</label>
+            <input id="company" name="company" placeholder="Your Company" data-i18n-placeholder="form_company_ph" required />
           </div>
         </div>
-      </section>
 
-      <!-- WHITEPAPER -->
-      <section id="whitepaper" class="section" style="background: var(--bg2);">
-        <div class="container">
-          <div class="kicker">Download</div>
-          <h2 class="title">一頁式 Whitepaper</h2>
-          <p class="desc">1 頁快速理解 ORDO AI 的定位、導入框架、部署模式與價值。</p>
-
-          <div class="card">
-            <div class="card-title">下載</div>
-            <p class="card-body"></p>
-            <div class="cta" style="margin-top:14px;">
-              <a class="btn btn-primary" href="whitepaper.pdf" download>下載 PDF</a>
-              <a class="btn" href="#contact">我想先做導入評估</a>
-            </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="email" data-i18n="form_email_label">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@company.com" data-i18n-placeholder="form_email_ph" required />
+          </div>
+          <div class="field">
+            <label for="deploymentPref" data-i18n="form_deploy_label">偏好部署</label>
+            <select id="deploymentPref" name="deploymentPref">
+              <option value="unsure" data-i18n="form_deploy_unsure">不確定（請協助評估）</option>
+              <option value="cloud" data-i18n="form_deploy_cloud">Cloud（雲端）</option>
+              <option value="onprem" data-i18n="form_deploy_onprem">On-Prem Suite（地端整體方案）</option>
+              <option value="appliance" data-i18n="form_deploy_appliance">Appliance（一機式）</option>
+              <option value="hybrid" data-i18n="form_deploy_hybrid">Hybrid（雲加地）</option>
+            </select>
           </div>
         </div>
-      </section>
 
-      <!-- CONTACT -->
-      <section id="contact" class="section">
-        <div class="container">
-          <div class="kicker">Get Started</div>
-          <h2 class="title">預約 15 分鐘導入評估</h2>
-          <p class="desc">
-            我們會快速確認：你最值得先做的 AI 場景、預期 KPI、資料與系統整合路徑，以及適合的部署型態（雲 / 地 / 混合）。
-          </p>
-
-          <div class="cta-band" style="margin-top:18px;">
-            <div>
-              <h2>讓你的 AI 先跑起來，再擴張成能力</h2>
-              <p>先用小而可驗證的場景跑出成果，再用模組化方式擴展到跨部門流程與多據點（含一機式快速複製）。</p>
-              <div class="pill-row" style="margin-top:14px;">
-                <span class="pill">快速落地</span>
-                <span class="pill">可治理</span>
-                <span class="pill">可擴張</span>
-                <span class="pill">雲 / 地 / 混合</span>
-              </div>
-            </div>
-
-            <!-- Lead Form (front-end only) -->
-            <form
-  class="form"
-  id="leadForm"
-  action="https://docs.google.com/forms/d/e/11AT9mn2vqjJUNPNISfycT_jYykHDDNOsnhzI0yy6z0A/formResponse"
-  method="POST"
-  target="hidden_iframe"
->
-              <div class="form-row">
-                <div class="field">
-                  <label for="name">姓名</label>
-                  <input id="name" name="name" placeholder="Zeus Su" required />
-                </div>
-                <div class="field">
-                  <label for="company">公司</label>
-                  <input id="company" name="company" placeholder="Your Company" required />
-                </div>
-              </div>
-
-              <div class="form-row">
-                <div class="field">
-                  <label for="email">Email</label>
-                  <input id="email" name="email" type="email" placeholder="name@company.com" required />
-                </div>
-                <div class="field">
-                  <label for="deploymentPref">偏好部署</label>
-                  <select id="deploymentPref" name="deploymentPref">
-                    <option value="unsure">不確定（請協助評估）</option>
-                    <option value="cloud">Cloud（雲端）</option>
-                    <option value="onprem">On-Prem Suite（地端整體 show案）</option>
-                    <option value="appliance">Appliance（一機式）</option>
-                    <option value="hybrid">Hybrid（雲加地）</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="field">
-                <label for="message">想先做的場景 / 需求簡述</label>
-                <textarea id="message" name="message" placeholder="例如：內部知識問答 + 工單回寫 / 分店一機式導入 / 地端合規需求…"></textarea>
-              </div>
-
-              <button class="btn btn-primary" type="submit" style="width:100%;">送出需求</button>
-              <div class="form-note">
-                
-              </div>
-            </form>            <iframe name="hidden_iframe" style="display:none;"></iframe>
-          </div>
-          <div class="card card-flat" style="margin-top:16px;">
-            <div class="card-title">聯絡資訊</div>
-            <p class="card-body">
-              Email：hello@yourdomain.com　｜　LINE：@yourline　｜　Company：ORDO AI Team
-            </p>
-          </div>
+        <div class="field">
+          <label for="message" data-i18n="form_msg_label">想先做的場景 / 需求簡述</label>
+          <textarea id="message" name="message" placeholder="例如：內部知識問答 + 工單回寫 / 分店一機式導入 / 地端合規需求…" data-i18n-placeholder="form_msg_ph"></textarea>
         </div>
-      </section>
 
+        <button class="btn btn-primary" type="submit" style="width:100%;" data-i18n="form_submit">送出需求</button>
+        <div class="form-note" data-i18n="form_note"></div>
+      </form>
+
+      <iframe name="hidden_iframe" style="display:none;"></iframe>
+    </div>
+
+    <div class="card card-flat" style="margin-top:16px;">
+      <div class="card-title" data-i18n="ct_info_title">聯絡資訊</div>
+      <p class="card-body" data-i18n="ct_info_body">
+        Email：Zeus@ordoai.co　｜　LINE：　｜　Company：ORDO AI Team
+      </p>
+    </div>
+  </div>
+</section>
+
+
+            
       <footer class="footer">
         <div class="container">
           © <span id="year"></span> ORDO AI. All rights reserved.
@@ -848,7 +880,543 @@
   </div>
 
   <script>
-  // 年份
+ // ===== i18n (PATCH: make language switch work) =====
+const i18n = window.i18n || {
+  zh: {
+    hero_kicker: "Enterprise AI Operating System",
+    hero_title: "把 AI 真正做進企業流程",
+    hero_lead:
+      "ORDO AI 讓 AI 不只是回答，而是能理解流程、協助執行、可治理、可擴張。我們以「快速開發 × 快速導入」交付成果，並提供雲端、地端與雲加地混合部署，滿足不同資安與現場限制。",
+    pill_fast: "快速開發 / 快速導入",
+    pill_deploy: "Cloud / On-Prem / Appliance / Hybrid",
+    pill_iam: "權限控管",
+    pill_audit: "Log / Audit",
+    pill_integration: "企業級整合",
+    hero_cta_primary: "立即預約 15 分鐘導入評估",
+    hero_cta_secondary: "下載一頁式 Whitepaper",
+    hero_one_liner_title: "一句話定位",
+    hero_one_liner_body:
+      "ORDO AI 是「企業 AI 作業系統」與「導入框架」：用可複製的方法把 AI 做進流程與系統，並確保可治理、可維運、可擴張。",
+// ===== WHY =====
+why_kicker: "Why",
+why_title: "AI 導入卡關，通常不是模型問題",
+why_desc: "多數組織缺的不是更多 AI 工具，而是一套可落地、可治理、可擴張的導入方式與系統架構。",
+why_c1_title: "工具分散",
+why_c1_body: "AI 很多但彼此不通，難以成為可運作的系統。",
+why_c2_title: "流程斷裂",
+why_c2_body: "會回答不等於會做：缺少流程與回寫能力。",
+why_c3_title: "PoC 停滯",
+why_c3_body: "做得出來但擴不出去：缺乏模組化與治理設計。",
+
+// ===== ENGINES =====
+eng_kicker: "Service × Product",
+eng_title: "服務端 × 產品端，一套完整交付",
+eng_desc: "服務端提供快速開發與導入節奏；產品端提供雲端、地端（整體方案 / 一機式）與雲加地混合部署，讓您從 PoC 到規模化一路可走。",
+eng_s_title: "Service Engine｜快速開發 + 快速導入",
+eng_s_body: "以 AI 加速需求釐清、架構設計與開發交付；並用導入框架推進 Assess → Define → Build → Scale，每一步都有交付件，避免停在 PoC。",
+eng_s_b1: "<b>快速開發</b>：規格 → 架構 → 開發 → 部署（短週期迭代）",
+eng_s_b2: "<b>快速導入</b>：每階段可驗證成果與 KPI",
+eng_s_b3: "<b>可擴張</b>：把成功模組化複製到跨部門流程",
+eng_p_title: "Product Engine｜全部署型態（雲 / 地 / 混合）",
+eng_p_body: "依資安與現場限制選擇最適部署方式：雲端快速擴展、地端整體方案、一機式快速複製，以及雲加地兼顧安全與效率。",
+eng_p_b1: "<b>Cloud</b>：最快啟用與擴展",
+eng_p_b2: "<b>On-Prem Suite</b>：地端整體方案（權限 / 稽核 / 內網整合）",
+eng_p_b3: "<b>Appliance</b>：一機式方案（分點/門市/工廠快速落地）",
+eng_p_b4: "<b>Hybrid</b>：雲加地（敏感資料不出網 + 彈性算力）",
+
+// ===== DEPLOYMENT =====
+dep_kicker: "Deployment",
+dep_title: "雲端 / 地端整體方案 / 一機式 / 雲加地",
+dep_desc: "你不用為了導入 AI 改變你的資安策略。ORDO AI 提供完整部署選項，讓 AI 能在你允許的邊界內運作。",
+
+dep_c_title: "Cloud（雲端）",
+dep_c_sub: "最快上線、最快擴展",
+dep_c_l1: "快速啟用、跨部門擴張",
+dep_c_l2: "集中更新與版本管理",
+dep_c_l3: "整合企業 SaaS / API",
+
+dep_o_title: "On-Prem Suite（地端整體方案）",
+dep_o_sub: "高資安 / 內網 / 合規場景",
+dep_o_l1: "權限、稽核、資料治理",
+dep_o_l2: "內網系統整合與網段設計",
+dep_o_l3: "符合政府/金融/製造需求",
+
+dep_a_title: "Appliance（一機式方案）",
+dep_a_sub: "快速落地、標準化複製",
+dep_a_l1: "一台機器即部署",
+dep_a_l2: "分點/門市/工廠現場",
+dep_a_l3: "可控成本、快速擴點",
+
+dep_h_title: "Hybrid（雲加地）",
+dep_h_sub: "安全與效率兼顧",
+dep_h_l1: "敏感資料留地端",
+dep_h_l2: "雲端彈性算力與更新",
+dep_h_l3: "導入更平滑、可持續",
+
+dep_tip_title: "建議策略（最常見）",
+dep_tip_body: "先用 <b>一機式 / 地端</b> 快速在現場跑出可驗證成果，再視資安與擴張需求導入 <b>Hybrid</b>，讓資料留在該留的地方，同時保有雲端擴展能力。",
+fw_kicker: "Framework",
+fw_title: "快速導入不是口號，是交付節奏",
+fw_desc: "ORDO AI 以四階段導入框架推進，每一步都定義清楚「要交付什麼」，確保可驗證、可複製、可治理。",
+fw_box_title: "Assess → Define → Build → Scale",
+fw_b1: "<b>現況盤點（Assess）</b>：流程 / 系統 / 資料成熟度 → <b>AI 可行性地圖</b>",
+fw_b2: "<b>PoC 定義（Define）</b>：場景與 KPI → <b>PoC Scope & KPI</b>",
+fw_b3: "<b>系統整合（Build）</b>：API / Workflow / RPA + 治理 → <b>可運作的 AI 系統（含回寫）</b>",
+fw_b4: "<b>驗證擴展（Scale）</b>：成效驗證、模組化複製 → <b>擴展方案與治理節點</b>",
+fw_out_title: "你會得到什麼？",
+fw_out_body: "一個「可跑的系統」+ 一套「可擴張的方法」。不只做出 PoC，而是把成功變成能力。",
+fw_img_note: "",
+
+uc_kicker: "Use Cases",
+uc_title: "把 AI 變成可執行的流程能力",
+uc_desc: "下面是最常見且最容易形成擴張效益的場景組合。",
+uc_c1_t: "自動回覆 / 內部詢問",
+uc_c1_b: "帶權限與資料來源治理的問答與查詢，避免「答錯、答超出權限」。",
+uc_c2_t: "訂位 / 工單 / 表單流程",
+uc_c2_b: "查詢 → 判斷 → 回寫；把 AI 做成流程節點，而不是聊天機器人。",
+uc_c3_t: "報價 / 報表 / 文件生成",
+uc_c3_b: "可追溯的文件產出（摘要、比對、生成），並可接入審核流程。",
+uc_c4_t: "圖片辨識 + 資料庫查詢",
+uc_c4_b: "辨識 → 比對 → 回應；可應用於商品、設備、現場檢核等。",
+uc_c5_t: "AI 協助開發與部署",
+uc_c5_b: "規格 → 程式 → 部署，縮短交付週期並降低溝通成本。",
+uc_c6_t: "跨系統整合（API / RPA）",
+uc_c6_b: "把企業既有系統串成可運作流程，讓 AI 成為協作層。",
+
+ar_kicker: "Architecture",
+ar_title: "企業 AI 架構，應該像系統而不是工具",
+ar_desc: "以流程為核心，串接資料與系統，並以權限、稽核確保可控與可追溯。",
+ar_c1_t: "介面層",
+ar_c1_b: "Web / H5 / API（Chat / Workflow UI）",
+ar_c2_t: "AI 協作層",
+ar_c2_b: "Workflow Engine / Agents / LLM Router",
+ar_c3_t: "資料與知識層",
+ar_c3_b: "文件、DB、Vector DB（RAG）、版本與權限",
+ar_int_t: "整合層",
+ar_int_b: "API / Webhook / RPA / 外部系統回寫（可依需求整合 ERP、CRM、表單、工單、訂位等）",
+sec_kicker:"Security",
+sec_title:"治理為設計基礎：可控、可追溯、可合規",
+sec_desc:"不是導入後才補資安，而是從一開始就把權限、稽核與資料治理納入設計，支援企業與政府場景。",
+sec_c1_t:"權限與邊界",
+sec_c1_b1:"使用者 / 部門 / 角色分級",
+sec_c1_b2:"資料來源控管與可追溯性",
+sec_c1_b3:"敏感資料可採不出網策略",
+sec_c2_t:"稽核與可回放",
+sec_c2_b1:"Log / Audit / Traceability",
+sec_c2_b2:"流程執行紀錄可回放（依專案設計）",
+sec_c2_b3:"模型策略可切換（雲端 / 私有）",
+
+wp_kicker:"Download",
+wp_title:"一頁式 Whitepaper",
+wp_desc:"1 頁快速理解 ORDO AI 的定位、導入框架、部署模式與價值。",
+wp_card_title:"下載",
+wp_card_body:"下載後可用於內部分享與提案溝通。若需客製版本（含產業案例與流程），可先預約導入評估。",
+wp_btn_pdf:"下載 PDF",
+wp_btn_assess:"我想先做導入評估",
+
+ct_kicker:"Get Started",
+ct_title:"預約 15 分鐘導入評估",
+ct_desc:"我們會快速確認：你最值得先做的 AI 場景、預期 KPI、資料與系統整合路徑，以及適合的部署型態（雲 / 地 / 混合）。",
+ct_band_title:"讓你的 AI 先跑起來，再擴張成能力",
+ct_band_desc:"先用小而可驗證的場景跑出成果，再用模組化方式擴展到跨部門流程與多據點（含一機式快速複製）。",
+ct_p1:"快速落地", ct_p2:"可治理", ct_p3:"可擴張", ct_p4:"雲 / 地 / 混合",
+ct_info_title:"聯絡資訊",
+ct_info_body:"Email：zeus@ordo.co　｜　LINE：@　｜　Company：ORDO AI Team",
+
+form_name_label:"姓名",
+form_company_label:"公司",
+form_email_label:"Email",
+form_deploy_label:"偏好部署",
+form_msg_label:"想先做的場景 / 需求簡述",
+form_name_ph:"姓名",
+form_company_ph:"公司名稱",
+form_email_ph:"name@company.com",
+form_msg_ph:"例如：內部知識問答 + 工單回寫 / 分店一機式導入 / 地端合規需求…",
+form_deploy_unsure:"不確定（請協助評估）",
+form_deploy_cloud:"Cloud（雲端）",
+form_deploy_onprem:"On-Prem Suite（地端整體方案）",
+form_deploy_appliance:"Appliance（一機式）",
+form_deploy_hybrid:"Hybrid（雲加地）",
+form_submit:"送出需求",
+form_note:"（送出後不會跳頁，我們將以 Email 與你聯繫）",
+form_alert_required:"請填寫：姓名 / 公司 / Email",
+form_alert_submitted:"已送出！我們會盡快與你聯繫。"
+
+
+
+  },
+  en: {
+    hero_kicker: "Enterprise AI Operating System",
+    hero_title: "Build AI into operations.",
+    hero_lead:
+      "ORDO AI goes beyond chat—into workflows that execute, remain governable, and scale. We deliver outcomes through fast development & fast adoption, with Cloud, On-Prem, Appliance, and Hybrid deployments to match security and on-site constraints.",
+    pill_fast: "Fast Dev / Fast Adoption",
+    pill_deploy: "Cloud / On-Prem / Appliance / Hybrid",
+    pill_iam: "Access Control",
+    pill_audit: "Logs / Audit",
+    pill_integration: "Enterprise Integration",
+    hero_cta_primary: "Book a 15-min assessment",
+    hero_cta_secondary: "Download 1-page whitepaper",
+    hero_one_liner_title: "One-line positioning",
+    hero_one_liner_body:
+      "ORDO AI is an enterprise AI operating system plus an adoption framework—turning AI into repeatable, governable, and scalable workflow capabilities.",
+    why_kicker: "Why",
+why_title: "Most AI adoption blockers are not model problems.",
+why_desc: "Organizations often lack a practical, governable, and scalable adoption method and system architecture—more tools won’t solve it.",
+why_c1_title: "Tool fragmentation",
+why_c1_body: "Many AI tools don’t connect, so they never become an operating system.",
+why_c2_title: "Broken workflows",
+why_c2_body: "Answering isn’t doing—execution and write-back are missing.",
+why_c3_title: "PoC stagnation",
+why_c3_body: "It works in a demo but can’t scale—lack of modularity and governance.",
+
+eng_kicker: "Service × Product",
+eng_title: "One delivery: service engine + product engine.",
+eng_desc: "Service provides fast development and adoption cadence; Product provides Cloud, On-Prem (suite / appliance) and Hybrid deployment—so you can scale beyond PoC.",
+eng_s_title: "Service Engine｜Fast Development + Fast Adoption",
+eng_s_body: "We accelerate discovery, architecture, and delivery with AI, and drive adoption through Assess → Define → Build → Scale—each step has deliverables to avoid PoC dead-ends.",
+eng_s_b1: "<b>Fast development</b>: spec → architecture → build → deploy (short iterations)",
+eng_s_b2: "<b>Fast adoption</b>: measurable outputs & KPIs per phase",
+eng_s_b3: "<b>Scalable</b>: modularize success and replicate across teams",
+
+eng_p_title: "Product Engine｜All deployment modes (Cloud / On-Prem / Hybrid)",
+eng_p_body: "Choose the best fit for security and constraints: cloud for speed, on-prem suite for compliance, appliance for quick replication, hybrid for both safety and agility.",
+eng_p_b1: "<b>Cloud</b>: fastest start & scale",
+eng_p_b2: "<b>On-Prem Suite</b>: full on-prem stack (IAM / audit / intranet integration)",
+eng_p_b3: "<b>Appliance</b>: plug-and-run for sites/stores/factories",
+eng_p_b4: "<b>Hybrid</b>: keep sensitive data on-prem + elastic cloud compute",
+
+dep_kicker: "Deployment",
+dep_title: "Cloud / On-Prem Suite / Appliance / Hybrid",
+dep_desc: "You don’t need to change your security strategy to adopt AI. ORDO AI provides options so AI runs within your allowed boundaries.",
+
+dep_c_title: "Cloud",
+dep_c_sub: "Fastest launch & scale",
+dep_c_l1: "Quick enablement across teams",
+dep_c_l2: "Centralized updates & versioning",
+dep_c_l3: "Integrate enterprise SaaS / APIs",
+
+dep_o_title: "On-Prem Suite",
+dep_o_sub: "High-security / intranet / compliance",
+dep_o_l1: "IAM, audit, data governance",
+dep_o_l2: "Intranet integration & network design",
+dep_o_l3: "Fits gov/finance/manufacturing",
+
+dep_a_title: "Appliance",
+dep_a_sub: "Rapid rollout, standardized replication",
+dep_a_l1: "Deploy with a single machine",
+dep_a_l2: "Perfect for sites/stores/factories",
+dep_a_l3: "Predictable cost, fast expansion",
+
+dep_h_title: "Hybrid",
+dep_h_sub: "Security + agility",
+dep_h_l1: "Keep sensitive data on-prem",
+dep_h_l2: "Elastic cloud compute & updates",
+dep_h_l3: "Smoother adoption at scale",
+
+dep_tip_title: "Common strategy",
+dep_tip_body: "Start with <b>Appliance / On-Prem</b> to prove outcomes on-site, then evolve to <b>Hybrid</b>—keep data where it should be while retaining cloud scalability.",
+fw_kicker: "Framework",
+fw_title: "Fast adoption is a delivery cadence, not a slogan.",
+fw_desc: "ORDO AI drives a 4-phase adoption framework. Each phase has clear deliverables—validated, repeatable, and governable.",
+fw_box_title: "Assess → Define → Build → Scale",
+fw_b1: "<b>Assess</b>: processes / systems / data maturity → <b>AI feasibility map</b>",
+fw_b2: "<b>Define</b>: use cases & KPIs → <b>PoC scope & KPI</b>",
+fw_b3: "<b>Build</b>: API / workflow / RPA + governance → <b>operational AI system (with write-back)</b>",
+fw_b4: "<b>Scale</b>: validate impact, modular replication → <b>scale plan & governance checkpoints</b>",
+fw_out_title: "What you get",
+fw_out_body: "A working system + a scalable method. Not just a PoC—turn success into capability.",
+fw_img_note: "",
+
+uc_kicker: "Use Cases",
+uc_title: "Turn AI into executable workflow capability",
+uc_desc: "Common scenarios that generate scalable impact when combined.",
+uc_c1_t: "Auto replies / internal Q&A",
+uc_c1_b: "Governed Q&A with access control—avoid wrong answers or unauthorized responses.",
+uc_c2_t: "Bookings / tickets / form workflows",
+uc_c2_b: "Query → decide → write back. AI as a workflow node, not just chat.",
+uc_c3_t: "Quotes / reports / document generation",
+uc_c3_b: "Traceable generation (summaries, comparisons, drafting) with approval workflows.",
+uc_c4_t: "Vision + database lookup",
+uc_c4_b: "Recognize → match → respond. For products, equipment, and on-site checks.",
+uc_c5_t: "AI-assisted development & deployment",
+uc_c5_b: "Spec → code → deploy. Shorten delivery cycles and reduce communication cost.",
+uc_c6_t: "Cross-system integration (API / RPA)",
+uc_c6_b: "Connect existing systems into operational flows—AI becomes the coordination layer.",
+
+ar_kicker: "Architecture",
+ar_title: "Enterprise AI should be a system—not a tool.",
+ar_desc: "Workflow-first architecture with data/system integration, governed by access control and audit.",
+ar_c1_t: "Interface layer",
+ar_c1_b: "Web / H5 / API (Chat / Workflow UI)",
+ar_c2_t: "AI collaboration layer",
+ar_c2_b: "Workflow Engine / Agents / LLM Router",
+ar_c3_t: "Data & knowledge layer",
+ar_c3_b: "Docs, DB, Vector DB (RAG), versioning & permissions",
+ar_int_t: "Integration layer",
+ar_int_b: "API / Webhook / RPA / write-back into enterprise systems (ERP/CRM/forms/tickets/bookings, etc.)",
+sec_kicker:"Security",
+sec_title:"Governance by design: controllable, traceable, compliant.",
+sec_desc:"Security isn’t an afterthought. We design access control, audit, and data governance from day one—ready for enterprise and public-sector use.",
+sec_c1_t:"Access & boundaries",
+sec_c1_b1:"User / department / role-based access",
+sec_c1_b2:"Governed sources with traceability",
+sec_c1_b3:"Keep sensitive data on-prem when needed",
+sec_c2_t:"Audit & replay",
+sec_c2_b1:"Logs / Audit / Traceability",
+sec_c2_b2:"Replayable execution records (project-based)",
+sec_c2_b3:"Switchable model strategy (cloud / private)",
+
+wp_kicker:"Download",
+wp_title:"1-page Whitepaper",
+wp_desc:"Understand ORDO AI positioning, framework, deployment modes, and value—in one page.",
+wp_card_title:"Download",
+wp_card_body:"Use it for internal sharing or proposals. For a customized version (industry cases & workflow), book an assessment first.",
+wp_btn_pdf:"Download PDF",
+wp_btn_assess:"Book an assessment",
+
+ct_kicker:"Get Started",
+ct_title:"Book a 15-min assessment",
+ct_desc:"We’ll quickly confirm: best first use case, expected KPIs, data/system integration path, and deployment preference (cloud / on-prem / hybrid).",
+ct_band_title:"Make AI run first—then scale into capability",
+ct_band_desc:"Start with a small, verifiable use case, then replicate modularly across departments and sites (including appliance rollout).",
+ct_p1:"Fast rollout", ct_p2:"Governable", ct_p3:"Scalable", ct_p4:"Cloud / On-Prem / Hybrid",
+ct_info_title:"Contact",
+ct_info_body:"Email：zeus@ordo.co　｜　LINE：@　｜　Company：ORDO AI Team",
+
+form_name_label:"Name",
+form_company_label:"Company",
+form_email_label:"Email",
+form_deploy_label:"Deployment",
+form_msg_label:"Use case / brief requirements",
+form_name_ph:"Your name",
+form_company_ph:"Company name",
+form_email_ph:"name@company.com",
+form_msg_ph:"e.g., internal RAG + ticket write-back / appliance rollout / on-prem compliance…",
+form_deploy_unsure:"Not sure (need assessment)",
+form_deploy_cloud:"Cloud",
+form_deploy_onprem:"On-Prem Suite",
+form_deploy_appliance:"Appliance",
+form_deploy_hybrid:"Hybrid",
+form_submit:"Submit",
+form_note:"(No page redirect after submit. We’ll reach out by email.)",
+form_alert_required:"Please fill: Name / Company / Email",
+form_alert_submitted:"Submitted! We’ll contact you soon."
+
+
+
+  },
+  ja: {
+    hero_kicker: "Enterprise AI Operating System",
+    hero_title: "AI を業務に組み込む",
+    hero_lead:
+      "ORDO AI は、AI を「回答」から「実行」へ。業務フローを理解し、実行し、ガバナンス可能でスケールする形で提供します。クラウド／オンプレ／アプライアンス／ハイブリッドに対応します。",
+    pill_fast: "迅速な開発 / 迅速な導入",
+    pill_deploy: "Cloud / On-Prem / Appliance / Hybrid",
+    pill_iam: "権限管理",
+    pill_audit: "ログ / 監査",
+    pill_integration: "業務システム連携",
+    hero_cta_primary: "15分の導入相談を予約",
+    hero_cta_secondary: "1枚ホワイトペーパー",
+    hero_one_liner_title: "ひとことで言うと",
+    hero_one_liner_body:
+      "ORDO AI は「企業向け AI OS」と「導入フレームワーク」。AI を再現可能な業務能力として組み込み、ガバナンスと運用、拡張を実現します。",
+why_kicker: "Why",
+why_title: "AI 導入の壁は、モデルではなく「仕組み」であることが多い",
+why_desc: "必要なのはツール追加ではなく、現場に落ち、ガバナンスでき、スケール可能な導入方法とシステム設計です。",
+why_c1_title: "ツールが分散",
+why_c1_body: "AI が点在し連携しないため、運用可能な仕組みになりません。",
+why_c2_title: "ワークフローが断絶",
+why_c2_body: "回答できても実行できない：フロー化と書き戻しが不足。",
+why_c3_title: "PoC が止まる",
+why_c3_body: "作れても広がらない：モジュール化とガバナンス設計が不足。",
+
+eng_kicker: "Service × Product",
+eng_title: "サービス × プロダクトで、ひとつの成果物として納品",
+eng_desc: "サービスは迅速な開発と導入リズムを提供し、プロダクトはクラウド／オンプレ（スイート／アプライアンス）／ハイブリッドに対応。PoC からスケールまで一路線で進めます。",
+eng_s_title: "Service Engine｜迅速な開発 + 迅速な導入",
+eng_s_body: "AI により要件整理・アーキ設計・実装を加速し、Assess → Define → Build → Scale を推進。各フェーズに納品物を定義し、PoC で止めません。",
+eng_s_b1: "<b>迅速な開発</b>：仕様 → 設計 → 開発 → 展開（短い反復）",
+eng_s_b2: "<b>迅速な導入</b>：各段階で成果と KPI を検証",
+eng_s_b3: "<b>スケール</b>：成功をモジュール化し部門横展開",
+
+eng_p_title: "Product Engine｜すべての導入形態（クラウド / オンプレ / ハイブリッド）",
+eng_p_body: "要件に合わせて最適化：クラウドで迅速に拡張、オンプレで高セキュリティ、アプライアンスで多拠点展開、ハイブリッドで安全と俊敏性を両立。",
+eng_p_b1: "<b>Cloud</b>：最速で開始・拡張",
+eng_p_b2: "<b>On-Prem Suite</b>：オンプレ一式（権限 / 監査 / 内部連携）",
+eng_p_b3: "<b>Appliance</b>：店舗・工場などへ迅速配布",
+eng_p_b4: "<b>Hybrid</b>：機微データはオンプレ + クラウド算力",
+
+dep_kicker: "Deployment",
+dep_title: "クラウド / オンプレ一式 / アプライアンス / ハイブリッド",
+dep_desc: "AI 導入のためにセキュリティ方針を変える必要はありません。許容範囲の中で動く導入形態を用意します。",
+
+dep_c_title: "Cloud",
+dep_c_sub: "最速で立ち上げ・拡張",
+dep_c_l1: "部門横展開が容易",
+dep_c_l2: "集中アップデートと版管理",
+dep_c_l3: "SaaS / API 連携",
+
+dep_o_title: "On-Prem Suite",
+dep_o_sub: "高セキュリティ / 内部網 / コンプライアンス",
+dep_o_l1: "権限・監査・データ統制",
+dep_o_l2: "内部システム連携とネットワーク設計",
+dep_o_l3: "官公庁・金融・製造に適合",
+
+dep_a_title: "Appliance",
+dep_a_sub: "迅速導入、標準化して複製",
+dep_a_l1: "一台で導入可能",
+dep_a_l2: "店舗・工場・拠点に最適",
+dep_a_l3: "コスト予測と拡点が容易",
+
+dep_h_title: "Hybrid",
+dep_h_sub: "安全性と俊敏性の両立",
+dep_h_l1: "機微データはオンプレに保持",
+dep_h_l2: "クラウドの弾力算力と更新",
+dep_h_l3: "スムーズにスケール",
+
+dep_tip_title: "推奨（よくある進め方）",
+dep_tip_body: "まず <b>アプライアンス / オンプレ</b> で現場成果を検証し、その後 <b>ハイブリッド</b> へ。データは守りつつクラウド拡張性を確保します。",
+fw_kicker: "Framework",
+fw_title: "迅速導入はスローガンではなく「納品リズム」です",
+fw_desc: "ORDO AI は 4 フェーズで導入を推進。各フェーズに納品物を定義し、検証可能・再現可能・ガバナンス可能にします。",
+fw_box_title: "Assess → Define → Build → Scale",
+fw_b1: "<b>Assess</b>：業務 / システム / データ成熟度 → <b>AI 実現可能性マップ</b>",
+fw_b2: "<b>Define</b>：ユースケースと KPI → <b>PoC スコープ & KPI</b>",
+fw_b3: "<b>Build</b>：API / ワークフロー / RPA + ガバナンス → <b>運用可能な AI（書き戻し含む）</b>",
+fw_b4: "<b>Scale</b>：効果検証・モジュール複製 → <b>拡張計画と統制ポイント</b>",
+fw_out_title: "得られるもの",
+fw_out_body: "動く仕組み + 拡張できる方法。PoC で終わらせず、成功を能力にします。",
+fw_img_note: "",
+
+uc_kicker: "Use Cases",
+uc_title: "AI を「実行できる業務能力」にする",
+uc_desc: "組み合わせることでスケール効果を生みやすい代表的なユースケースです。",
+uc_c1_t: "自動返信 / 社内問い合わせ",
+uc_c1_b: "権限と参照元を統制した Q&A。誤回答や権限外回答を防ぎます。",
+uc_c2_t: "予約 / チケット / フォーム業務",
+uc_c2_b: "検索 → 判断 → 書き戻し。AI をワークフローのノードとして組み込みます。",
+uc_c3_t: "見積 / レポート / 文書生成",
+uc_c3_b: "追跡可能な生成（要約・比較・作成）と承認フロー連携。",
+uc_c4_t: "画像認識 + DB 検索",
+uc_c4_b: "認識 → 照合 → 応答。商品・設備・現場点検などに活用可能。",
+uc_c5_t: "AI による開発・デプロイ支援",
+uc_c5_b: "仕様 → 実装 → 展開。納期短縮とコミュニケーションコスト削減。",
+uc_c6_t: "システム連携（API / RPA）",
+uc_c6_b: "既存システムを業務フローとして接続し、AI を協調レイヤーにします。",
+
+ar_kicker: "Architecture",
+ar_title: "企業 AI はツールではなく「システム」であるべき",
+ar_desc: "ワークフロー中心でデータ/システム連携し、権限と監査で統制・追跡可能にします。",
+ar_c1_t: "UI レイヤー",
+ar_c1_b: "Web / H5 / API（チャット / ワークフロー UI）",
+ar_c2_t: "AI 協調レイヤー",
+ar_c2_b: "Workflow Engine / Agents / LLM Router",
+ar_c3_t: "データ＆ナレッジ",
+ar_c3_b: "文書・DB・Vector DB（RAG）・版管理・権限",
+ar_int_t: "統合レイヤー",
+ar_int_b: "API / Webhook / RPA / 外部システムへの書き戻し（ERP/CRM/フォーム/チケット/予約 等）",
+sec_kicker:"Security",
+sec_title:"ガバナンスを前提に設計：統制・追跡・準拠",
+sec_desc:"導入後に補うのではなく、最初から権限・監査・データ統制を設計に組み込みます。企業・官公庁にも対応可能です。",
+sec_c1_t:"権限と境界",
+sec_c1_b1:"ユーザー / 部門 / ロール別の権限",
+sec_c1_b2:"参照元の統制と追跡可能性",
+sec_c1_b3:"必要に応じて機微データはオンプレ保持",
+sec_c2_t:"監査とリプレイ",
+sec_c2_b1:"ログ / 監査 / 追跡性",
+sec_c2_b2:"実行記録の再生（案件設計により）",
+sec_c2_b3:"モデル戦略の切替（クラウド / プライベート）",
+
+wp_kicker:"Download",
+wp_title:"1枚ホワイトペーパー",
+wp_desc:"ORDO AI の位置づけ、導入フレーム、導入形態、価値を 1 枚で把握できます。",
+wp_card_title:"ダウンロード",
+wp_card_body:"社内共有や提案にご利用ください。業界別の事例やフローを含むカスタム版は、まず導入相談をご予約ください。",
+wp_btn_pdf:"PDF をダウンロード",
+wp_btn_assess:"導入相談を予約",
+
+ct_kicker:"Get Started",
+ct_title:"15分の導入相談を予約",
+ct_desc:"優先すべきユースケース、KPI、データ/システム連携、導入形態（クラウド/オンプレ/ハイブリッド）を素早く整理します。",
+ct_band_title:"まず動かし、その後「能力」としてスケール",
+ct_band_desc:"小さく検証可能なユースケースで成果を出し、モジュール化して部門・多拠点へ展開します（アプライアンス展開も含む）。",
+ct_p1:"迅速導入", ct_p2:"統制可能", ct_p3:"拡張可能", ct_p4:"クラウド / オンプレ / ハイブリッド",
+ct_info_title:"連絡先",
+ct_info_body:"Email：zeus@ordo.co　｜　LINE：@　｜　Company：ORDO AI Team",
+
+form_name_label:"お名前",
+form_company_label:"会社名",
+form_email_label:"メール",
+form_deploy_label:"導入形態",
+form_msg_label:"優先ユースケース / 要件概要",
+form_name_ph:"お名前",
+form_company_ph:"会社名",
+form_email_ph:"name@company.com",
+form_msg_ph:"例：社内RAG + チケット書き戻し / アプライアンス展開 / オンプレ準拠…",
+form_deploy_unsure:"未定（要相談）",
+form_deploy_cloud:"クラウド",
+form_deploy_onprem:"オンプレ一式",
+form_deploy_appliance:"アプライアンス",
+form_deploy_hybrid:"ハイブリッド",
+form_submit:"送信",
+form_note:"（送信後に画面遷移はありません。メールでご連絡します。）",
+form_alert_required:"必須：お名前 / 会社名 / メール を入力してください",
+form_alert_submitted:"送信しました。追ってご連絡いたします。"
+
+
+
+  }
+};
+
+function applyLang(lang) {
+  localStorage.setItem("ordo_lang", lang);
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+  const key = el.dataset.i18n;
+  const val = i18n[lang]?.[key];
+  if (val == null) return;
+
+  // 白名單：只在「我們自己控制的內容區」允許 HTML
+  const allowHtml =
+    el.classList.contains("bullets") ||
+    el.closest(".bullets") ||
+    el.classList.contains("card-body") ||
+    el.classList.contains("desc");
+
+  if (allowHtml) {
+    el.innerHTML = val;     // ✅ <b> 會生效
+  } else {
+    el.textContent = val;  // 🔒 預設安全
+  }
+});
+
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.dataset.i18nPlaceholder;
+    const val = i18n?.[lang]?.[key];
+    if (val != null) el.placeholder = val;
+  });
+
+  // highlight active language button
+  document.querySelectorAll(".lang [data-lang]").forEach(b => {
+    const active = b.dataset.lang === lang;
+    b.style.borderColor = active ? "rgba(37,99,235,0.35)" : "rgba(0,0,0,0.10)";
+    b.style.boxShadow = active ? "0 0 0 4px rgba(37,99,235,0.10)" : "none";
+  });
+}
+
+// bind clicks
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".lang [data-lang]");
+  if (!btn) return;
+  applyLang(btn.dataset.lang);
+});
+
+// initial apply
+applyLang(localStorage.getItem("ordo_lang") || "zh");
+
+ // 年份
   document.getElementById("year").textContent = new Date().getFullYear();
 
   // 平滑捲動
@@ -887,7 +1455,7 @@
     };
 
     if (!data.name || !data.company || !data.email) {
-      alert("請填寫：姓名 / 公司 / Email");
+      alert(i18n[currentLang]?.form_alert_required || "Please fill: Name / Company / Email");
       return;
     }
 
@@ -915,12 +1483,105 @@
     // 送出到 Google Form（不跳頁）
     form.submit();
 
-    alert("已送出！我們會盡快與你聯繫。");
-    form.reset();
+    alert(i18n[currentLang]?.form_alert_submitted || "Submitted!");
+    form.reset();// ===== FORCE language switch (debug-safe) =====
+(function () {
+  const i18n = {
+    zh: {
+      hero_kicker: "Enterprise AI Operating System",
+      hero_title: "把 AI 真正做進企業流程",
+      hero_lead:
+        "ORDO AI 讓 AI 不只是回答，而是能理解流程、協助執行、可治理、可擴張。我們以「快速開發 × 快速導入」交付成果，並提供雲端、地端與雲加地混合部署，滿足不同資安與現場限制。",
+      pill_fast: "快速開發 / 快速導入",
+      pill_deploy: "Cloud / On-Prem / Appliance / Hybrid",
+      pill_iam: "權限控管",
+      pill_audit: "Log / Audit",
+      pill_integration: "企業級整合"
+    },
+    en: {
+      hero_kicker: "Enterprise AI Operating System",
+      hero_title: "Build AI into operations.",
+      hero_lead:
+        "ORDO AI goes beyond chat—into workflows that execute, remain governable, and scale. We deliver outcomes through fast development & fast adoption, with Cloud, On-Prem, Appliance, and Hybrid deployments.",
+      pill_fast: "Fast Dev / Fast Adoption",
+      pill_deploy: "Cloud / On-Prem / Appliance / Hybrid",
+      pill_iam: "Access Control",
+      pill_audit: "Logs / Audit",
+      pill_integration: "Enterprise Integration"
+    },
+    ja: {
+      hero_kicker: "Enterprise AI Operating System",
+      hero_title: "AI を業務に組み込む",
+      hero_lead:
+        "ORDO AI は、AI を「回答」から「実行」へ。業務フローを理解し、実行し、ガバナンス可能でスケールする形で提供します。",
+      pill_fast: "迅速な開発 / 迅速な導入",
+      pill_deploy: "Cloud / On-Prem / Appliance / Hybrid",
+      pill_iam: "権限管理",
+      pill_audit: "ログ / 監査",
+      pill_integration: "業務システム連携"
+    }
+  };
+
+  function applyLang(lang) {
+  console.log("[i18n] switch to:", lang);
+
+  // 1) 一般文案：textContent
+  // 但 LI（bullets）用 innerHTML 才能保留 <b>
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    const val = i18n[lang]?.[key];
+    if (val == null) return;
+
+    const tag = el.tagName.toUpperCase();
+    const allowHtml = tag === "LI" || el.hasAttribute("data-i18n-html");
+
+    if (allowHtml) el.innerHTML = val;
+    else el.textContent = val;
   });
+
+  // 2) placeholder（表單）
+  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+    const key = el.dataset.i18nPlaceholder;
+    const val = i18n[lang]?.[key];
+    if (val != null) el.setAttribute("placeholder", val);
+  });
+
+  // 3) 保存語言
+  localStorage.setItem("ordo_lang", lang);
+
+  // 4) SEO 更新（title / meta description / OG）
+  document.documentElement.lang = (lang === "zh") ? "zh-Hant" : lang;
+
+  const t = i18n[lang] || {};
+  const elTitle = document.getElementById("seo_title");
+  const elDesc  = document.getElementById("seo_desc");
+  const elOgT   = document.getElementById("og_title");
+  const elOgD   = document.getElementById("og_desc");
+
+  if (t.seo_title) {
+    document.title = t.seo_title;
+    if (elTitle) elTitle.textContent = t.seo_title;
+  }
+  if (t.seo_desc && elDesc) elDesc.setAttribute("content", t.seo_desc);
+  if (t.og_title && elOgT)  elOgT.setAttribute("content", t.og_title);
+  if (t.og_desc && elOgD)   elOgD.setAttribute("content", t.og_desc);
+}
+
+
+  // 綁定所有語言按鈕（不管你放在哪）
+  document.querySelectorAll("[data-lang]").forEach(btn => {
+    btn.addEventListener("click", () => {
+      applyLang(btn.dataset.lang);
+    });
+  });
+
+  // 初始語言
+  applyLang(localStorage.getItem("ordo_lang") || "zh");
+})();
+
+  });
+
 </script>
 
 </body>
 </html>
-
-
