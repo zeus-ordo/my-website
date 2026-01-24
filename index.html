@@ -820,48 +820,48 @@
 
       <!-- Lead Form -->
       <form
-        class="form"
-        id="leadForm"
-        action="https://docs.google.com/forms/d/e/11AT9mn2vqjJUNPNISfycT_jYykHDDNOsnhzI0yy6z0A/formResponse"
-        method="POST"
-        target="hidden_iframe"
-      >
-        <div class="form-row">
-          <div class="field">
-            <label for="name" data-i18n="form_name_label">姓名</label>
-            <input id="name" name="name" placeholder="Zeus Su" data-i18n-placeholder="form_name_ph" required />
-          </div>
-          <div class="field">
-            <label for="company" data-i18n="form_company_label">公司</label>
-            <input id="company" name="company" placeholder="Your Company" data-i18n-placeholder="form_company_ph" required />
-          </div>
-        </div>
+  class="form"
+  id="leadForm"
+  action="https://docs.google.com/forms/d/e/11AT9mn2vqjJUNPNISfycT_jYykHDDNOsnhzI0yy6z0A/formResponse"
+  method="POST"
+>
+  <div class="form-row">
+    <div class="field">
+      <label for="name" data-i18n="form_name_label">姓名</label>
+      <input id="name" name="name" placeholder="Zeus Su" data-i18n-placeholder="form_name_ph" required />
+    </div>
+    <div class="field">
+      <label for="company" data-i18n="form_company_label">公司</label>
+      <input id="company" name="company" placeholder="Your Company" data-i18n-placeholder="form_company_ph" required />
+    </div>
+  </div>
 
-        <div class="form-row">
-          <div class="field">
-            <label for="email" data-i18n="form_email_label">Email</label>
-            <input id="email" name="email" type="email" placeholder="name@company.com" data-i18n-placeholder="form_email_ph" required />
-          </div>
-          <div class="field">
-            <label for="deploymentPref" data-i18n="form_deploy_label">偏好部署</label>
-            <select id="deploymentPref" name="deploymentPref">
-              <option value="unsure" data-i18n="form_deploy_unsure">不確定（請協助評估）</option>
-              <option value="cloud" data-i18n="form_deploy_cloud">Cloud（雲端）</option>
-              <option value="onprem" data-i18n="form_deploy_onprem">On-Prem Suite（地端整體方案）</option>
-              <option value="appliance" data-i18n="form_deploy_appliance">Appliance（一機式）</option>
-              <option value="hybrid" data-i18n="form_deploy_hybrid">Hybrid（雲加地）</option>
-            </select>
-          </div>
-        </div>
+  <div class="form-row">
+    <div class="field">
+      <label for="email" data-i18n="form_email_label">Email</label>
+      <input id="email" name="email" type="email" placeholder="name@company.com" data-i18n-placeholder="form_email_ph" required />
+    </div>
+    <div class="field">
+      <label for="deploymentPref" data-i18n="form_deploy_label">偏好部署</label>
+      <select id="deploymentPref" name="deploymentPref">
+        <option value="unsure" data-i18n="form_deploy_unsure">不確定（請協助評估）</option>
+        <option value="cloud" data-i18n="form_deploy_cloud">Cloud（雲端）</option>
+        <option value="onprem" data-i18n="form_deploy_onprem">On-Prem Suite（地端整體方案）</option>
+        <option value="appliance" data-i18n="form_deploy_appliance">Appliance（一機式）</option>
+        <option value="hybrid" data-i18n="form_deploy_hybrid">Hybrid（雲加地）</option>
+      </select>
+    </div>
+  </div>
 
-        <div class="field">
-          <label for="message" data-i18n="form_msg_label">想先做的場景 / 需求簡述</label>
-          <textarea id="message" name="message" placeholder="例如：內部知識問答 + 工單回寫 / 分店一機式導入 / 地端合規需求…" data-i18n-placeholder="form_msg_ph"></textarea>
-        </div>
+  <div class="field">
+    <label for="message" data-i18n="form_msg_label">想先做的場景 / 需求簡述</label>
+    <textarea id="message" name="message" placeholder="例如：內部知識問答 + 工單回寫 / 分店一機式導入 / 地端合規需求…" data-i18n-placeholder="form_msg_ph"></textarea>
+  </div>
 
-        <button class="btn btn-primary" type="submit" style="width:100%;" data-i18n="form_submit">送出需求</button>
-        <div class="form-note" data-i18n="form_note"></div>
-      </form>
+  <button class="btn btn-primary" type="submit" style="width:100%;" data-i18n="form_submit">送出需求</button>
+  <div class="form-note" data-i18n="form_note"></div>
+</form>
+
 
       <iframe name="hidden_iframe" style="display:none;"></iframe>
     </div>
@@ -1045,8 +1045,9 @@ form_deploy_appliance:"Appliance（一機式）",
 form_deploy_hybrid:"Hybrid（雲加地）",
 form_submit:"送出需求",
 form_note:"（送出後不會跳頁，我們將以 Email 與你聯繫）",
-form_alert_required:"請填寫：姓名 / 公司 / Email",
-form_alert_submitted:"已送出！我們會盡快與你聯繫。",
+form_alert_required: "請填寫：姓名 / 公司 / Email",
+form_alert_submitted: "已送出！我們會盡快與你聯繫。",
+form_alert_failed: "送出失敗，請稍後再試一次。",
 nav_whitepaper: "Whitepaper",
 nav_assessment: "15 分鐘導入評估",
 nav_why: "為什麼",
@@ -1055,6 +1056,8 @@ nav_deployment: "部署",
 nav_framework: "導入框架",
 nav_architecture: "架構",
 nav_security: "資安",
+
+
 
 
 
@@ -1215,8 +1218,9 @@ form_deploy_appliance:"Appliance",
 form_deploy_hybrid:"Hybrid",
 form_submit:"Submit",
 form_note:"(No page redirect after submit. We’ll reach out by email.)",
-form_alert_required:"Please fill: Name / Company / Email",
-form_alert_submitted:"Submitted! We’ll contact you soon.",
+form_alert_required: "Please fill: Name / Company / Email",
+form_alert_submitted: "Submitted! We'll get back to you shortly.",
+form_alert_failed: "Submit failed. Please try again.",
 nav_whitepaper: "Whitepaper",
 nav_assessment: "15-min Assessment",
 nav_why: "Why",
@@ -1225,6 +1229,8 @@ nav_deployment: "Deployment",
 nav_framework: "Framework",
 nav_architecture: "Architecture",
 nav_security: "Security",
+
+
 
 
 
@@ -1385,8 +1391,9 @@ form_deploy_appliance:"アプライアンス",
 form_deploy_hybrid:"ハイブリッド",
 form_submit:"送信",
 form_note:"（送信後に画面遷移はありません。メールでご連絡します。）",
-form_alert_required:"必須：お名前 / 会社名 / メール を入力してください",
-form_alert_submitted:"送信しました。追ってご連絡いたします。",
+form_alert_required: "お名前／会社名／メールを入力してください",
+form_alert_submitted: "送信しました。追ってご連絡いたします。",
+form_alert_failed: "送信に失敗しました。しばらくしてから再度お試しください。",
 nav_whitepaper: "ホワイトペーパー",
 nav_assessment: "15分 導入相談",
 nav_why: "Why",
@@ -1395,6 +1402,7 @@ nav_deployment: "導入形態",
 nav_framework: "フレームワーク",
 nav_architecture: "アーキテクチャ",
 nav_security: "セキュリティ",
+
 
 
 
@@ -1475,49 +1483,49 @@ applyLang(localStorage.getItem("ordo_lang") || "zh");
     message: "entry.1308200818"
   };
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+  form.addEventListener("submit", async (e) => {
+  e.preventDefault();
 
-    // 取得表單資料
-    const data = {
-      name: form.name.value.trim(),
-      company: form.company.value.trim(),
-      email: form.email.value.trim(),
-      deployment: form.deploymentPref.value,
-      message: form.message.value.trim()
-    };
+  const lang = localStorage.getItem("ordo_lang") || "zh";
 
-    if (!data.name || !data.company || !data.email) {
-      alert(i18n[currentLang]?.form_alert_required || "Please fill: Name / Company / Email");
-      return;
-    }
+  const data = {
+    name: form.name.value.trim(),
+    company: form.company.value.trim(),
+    email: form.email.value.trim(),
+    deployment: form.deploymentPref.value,
+    message: form.message.value.trim()
+  };
 
-    // 清掉舊的 hidden 欄位
-    form.querySelectorAll("input[data-gform]").forEach(el => el.remove());
+  if (!data.name || !data.company || !data.email) {
+    alert(i18n[lang]?.form_alert_required || "Please fill: Name / Company / Email");
+    return;
+  }
 
-    // 動態塞 Google Form 需要的欄位
-    const map = {
-      [ENTRY.name]: data.name,
-      [ENTRY.company]: data.company,
-      [ENTRY.email]: data.email,
-      [ENTRY.deployment]: data.deployment,
-      [ENTRY.message]: data.message
-    };
+  // Google Form entry mapping（你已有）
+  const payload = new URLSearchParams();
+  payload.append(ENTRY.name, data.name);
+  payload.append(ENTRY.company, data.company);
+  payload.append(ENTRY.email, data.email);
+  payload.append(ENTRY.deployment, data.deployment);
+  payload.append(ENTRY.message, data.message);
 
-    Object.keys(map).forEach(key => {
-      const input = document.createElement("input");
-      input.type = "hidden";
-      input.name = key;
-      input.value = map[key];
-      input.setAttribute("data-gform", "1");
-      form.appendChild(input);
+  try {
+    await fetch(form.action, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
+      body: payload.toString()
     });
 
-    // 送出到 Google Form（不跳頁）
-    form.submit();
+    alert(i18n[lang]?.form_alert_submitted || "Submitted!");
+    form.reset();
+  } catch (err) {
+    console.error("[gform] submit failed:", err);
+    alert(i18n[lang]?.form_alert_failed || "Submit failed. Please try again.");
+  }
+});
 
-    alert(i18n[currentLang]?.form_alert_submitted || "Submitted!");
-    form.reset();// ===== FORCE language switch (debug-safe) =====
+  
 (function () {
   const i18n = {
     zh: {
