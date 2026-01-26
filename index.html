@@ -1428,11 +1428,25 @@ async function submitToGoogleForm(form) {
     return false;
   }
 
+
+// ✅ Google Form 固定值對照（一定要跟表單選項文字完全一樣）
+// ===== Deployment value → Google Form 三語選項（唯一真實來源）=====
+const DEPLOYMENT_GFORM_VALUE = {
+  unsure: "Not sure / 不確定（請協助評估） / 未定（要相談）",
+  cloud: "Cloud / 雲端 / クラウド",
+  onprem: "On-Prem Suite / 地端整體方案 / オンプレ一式",
+  appliance: "Appliance / 一機式 / アプライアンス",
+  hybrid: "Hybrid / 雲加地 / ハイブリッド"
+};
+
   const payload = new URLSearchParams();
   payload.append(ORDO_FORM.ENTRY.name, data.name);
   payload.append(ORDO_FORM.ENTRY.company, data.company);
   payload.append(ORDO_FORM.ENTRY.email, data.email);
-  payload.append(ORDO_FORM.ENTRY.deployment, data.deployment);
+  payload.append(
+  ORDO_FORM.ENTRY.deployment,
+  DEPLOYMENT_GFORM_VALUE[data.deployment]
+);
   payload.append(ORDO_FORM.ENTRY.message, data.message);
 
   console.log("[gform] posting to:", gformUrl);
