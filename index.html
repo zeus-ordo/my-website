@@ -845,12 +845,12 @@
     <div class="field">
       <label for="deploymentPref" data-i18n="form_deploy_label">偏好部署</label>
       <select id="deploymentPref" name="deploymentPref">
-        <option value="unsure" data-i18n="form_deploy_unsure">不確定（請協助評估）</option>
-        <option value="cloud" data-i18n="form_deploy_cloud">Cloud（雲端）</option>
-        <option value="onprem" data-i18n="form_deploy_onprem">On-Prem Suite（地端整體方案）</option>
-        <option value="appliance" data-i18n="form_deploy_appliance">Appliance（一機式）</option>
-        <option value="hybrid" data-i18n="form_deploy_hybrid">Hybrid（雲加地）</option>
-      </select>
+  <option value="unsure" data-i18n="form_deploy_unsure"></option>
+  <option value="cloud" data-i18n="form_deploy_cloud"></option>
+  <option value="onprem" data-i18n="form_deploy_onprem"></option>
+  <option value="appliance" data-i18n="form_deploy_appliance"></option>
+  <option value="hybrid" data-i18n="form_deploy_hybrid"></option>
+</select>
     </div>
   </div>
 
@@ -1431,7 +1431,7 @@ async function submitToGoogleForm(form) {
 
 // ✅ Google Form 固定值對照（一定要跟表單選項文字完全一樣）
 // ===== Deployment value → Google Form 三語選項（唯一真實來源）=====
-const DEPLOYMENT_GFORM_VALUE = {
+const DEPLOYMENT_TEXT = {
   unsure: "Not sure / 不確定（請協助評估） / 未定（要相談）",
   cloud: "Cloud / 雲端 / クラウド",
   onprem: "On-Prem Suite / 地端整體方案 / オンプレ一式",
@@ -1439,14 +1439,16 @@ const DEPLOYMENT_GFORM_VALUE = {
   hybrid: "Hybrid / 雲加地 / ハイブリッド"
 };
 
+const depKey = form.querySelector("#deploymentPref").value;
+const depText = DEPLOYMENT_TEXT[depKey];
+
+console.log("[deploy] key =", depKey);
+console.log("[deploy] send =", depText);
   const payload = new URLSearchParams();
   payload.append(ORDO_FORM.ENTRY.name, data.name);
   payload.append(ORDO_FORM.ENTRY.company, data.company);
   payload.append(ORDO_FORM.ENTRY.email, data.email);
-  payload.append(
-  ORDO_FORM.ENTRY.deployment,
-  DEPLOYMENT_GFORM_VALUE[data.deployment]
-);
+  payload.append(ORDO_FORM.ENTRY.deployment, depText);
   payload.append(ORDO_FORM.ENTRY.message, data.message);
 
   console.log("[gform] posting to:", gformUrl);
